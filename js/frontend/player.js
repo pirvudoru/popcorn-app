@@ -129,7 +129,7 @@ window.spawnVideoPlayer = function (url, subs, movieModel) {
         '<source src="' + url + '" type="video/mp4" />' +
         subtracks +
       '</video>' +
-      App.renderTemplate('movie-title-tpl', {movieModel: movieModel});
+      App.renderTemplate('movie-header-tpl', {movieModel: movieModel});
 
     if (!document.createElement('video').canPlayType('video/mp4')) {
       return alert('Weird, but it seems the application is broken and you can\'t play this video.');

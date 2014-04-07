@@ -13,7 +13,7 @@
   -webkit-app-region: no-drag;
 }
 
-#video_player_title {
+#video_player_header {
   position: absolute;
   z-index: 9999;
   top: 15px;
@@ -72,13 +72,13 @@
 
 // Shows the close button when the video controls are active
 // VideoJS has a delay before putting the user-active/inactive class, so you can't close the video during that time if it's hidden by default
-#video_player.vjs-user-inactive + #video_player_title {
+#video_player.vjs-user-inactive + #video_player_header {
   @include transition(opacity 0.8s ease);
   opacity: 0.0;
   pointer-events: none;
 }
 
-#video_player.vjs-user-active + #video_player_title {
+#video_player.vjs-user-active + #video_player_header {
   @include transition(opacity 0.2s ease-out);
   opacity: 1.0;
   pointer-events: all;
