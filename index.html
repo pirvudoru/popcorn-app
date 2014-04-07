@@ -151,6 +151,13 @@
       </div>
     </script>
 
+    <script id="movie-title-tpl" type="text/x-template">
+      <div id="video_player_title">
+         <a href="javascript:;" id="video_player_close" class="btn-close"><img src="/images/close.svg" width="50" /></a>
+         <p><%= movieModel.get('niceTitle') %></p>
+      </div>
+    </script>
+
     <div class="popcorn-load hidden">
       <div class="wrapper">
         <span class="spinner"></span>
