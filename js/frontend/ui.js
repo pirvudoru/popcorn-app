@@ -25,6 +25,10 @@ App.loader = function (hasToShow, copy) {
   }
 };
 
+App.renderTemplate = function (template, locales) {
+  return _.template($('#' + template).html())(locales || {});
+};
+
 // Show by default
 window.initialLoading = true;
 App.loader(true, i18n.__('loading'));
