@@ -22,14 +22,13 @@
   -webkit-app-region: no-drag;
   float: left;
   line-height: 50px;
-  font-size: 1.25em;
-  font-weight: 100;
 
-  a, p {
+  a, h1 {
     float: left;
   }
 
-  p {
+  h1 {
+    font-size: 1.25em;
     margin-left: 15px;
   }
 }
