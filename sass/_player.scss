@@ -21,15 +21,18 @@
   color: lightgray;
   -webkit-app-region: no-drag;
   float: left;
-  line-height: 50px;
+  line-height: 55px;
 
   a, h1 {
     float: left;
   }
 
   h1 {
-    font-size: 1.25em;
+    opacity: 0.8;
+    font-size: 1.17em;
     margin-left: 15px;
+    font-weight: 100;
+    -webkit-font-smoothing: antialiased;
   }
 }
 
